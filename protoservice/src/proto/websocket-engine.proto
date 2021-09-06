@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "src/streaming";
+
+package proto;
+
+message Request {
+    string uri = 1;
+    bytes frame = 2;
+}
+
+message Responce {
+    string uri = 1;
+    bytes frame = 2;
+    string error = 3;
+}
